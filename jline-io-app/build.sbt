@@ -6,7 +6,7 @@ lazy val root = (project in file("."))
     organization         := "Develeon",
     scalaVersion         := scala3Version,
     name                 := "jline-test",
-    Compile / run / fork := true,
+    Compile / run / fork := false,
     libraryDependencies ++= Seq(
       "org.typelevel"       %% "cats-core"   % "2.12.0",
       "org.typelevel"       %% "cats-effect" % "3.5.4",
